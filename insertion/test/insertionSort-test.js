@@ -1,7 +1,7 @@
 const assert = require('chai').assert
-const sorter = require('../bubbleSort.js')
+const sorter = require('../insertionSort.js')
 
-describe('bubbleSort', () => {
+describe('insertionSort', () => {
   context('when sorted', () => {
     it('it returns original array of letters', () => {
       const results = new sorter(['a', 'b']).run()

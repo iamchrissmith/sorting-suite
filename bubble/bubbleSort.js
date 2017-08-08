@@ -30,4 +30,4 @@ function bubbleSort(unsorted) {
 
 module.exports = bubbleSort
 
-console.log(new bubbleSort(['b', 'a', 'c', 'd']).run())
+console.log(new bubbleSort([ 5, 4, 3, 2, 1 ]).run())
