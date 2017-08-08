@@ -25,8 +25,9 @@ describe('', () => {
       assert.deepEqual(results, ['a', 'b', 'c', 'd'])
     })
 
-    xit('it can sort 4 numbers', () => {
-
+    it('it can sort 4 numbers', () => {
+      const results = new bubbleSort([4,3,2,1]).run()
+      assert.deepEqual(results, [1,2,3,4])
     })
   })
 })
