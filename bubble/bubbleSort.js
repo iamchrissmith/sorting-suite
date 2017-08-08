@@ -15,17 +15,16 @@ function bubbleSort(unsorted) {
     }
     return unsorted
   },
-  this.compareItems = (item, index, unsorted) => {
+  this.compareItems = (item, index) => {
     let compare = unsorted[index+1]
     if (item > compare) {
-      unsorted = this.swap_items(index, unsorted)
+      this.swapItems(index)
     }
   },
-  this.swap_items = (index, items) => {
-    let temp = items[index]
-    items[index] = items[index+1]
-    items[index+1] = temp
-    return items
+  this.swapItems = (index) => {
+    let temp = unsorted[index]
+    unsorted[index] = unsorted[index+1]
+    unsorted[index+1] = temp
   }
 }
 
