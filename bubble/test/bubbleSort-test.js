@@ -15,12 +15,14 @@ describe('', () => {
   })
 
   context('when out of order', () => {
-    xit('it can sort a two element array', () => {
-
+    it('it can sort a two element array', () => {
+      const results = new bubbleSort(['b', 'a']).run()
+      assert.deepEqual(results, ['a', 'b'])
     })
 
-    xit('it can sort 4 letters', () => {
-
+    it('it can sort 4 letters', () => {
+      const results = new bubbleSort(['b', 'a', 'c', 'd']).run()
+      assert.deepEqual(results, ['a', 'b', 'c', 'd'])
     })
 
     xit('it can sort 4 numbers', () => {
